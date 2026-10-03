@@ -1,9 +1,0 @@
-{
-  "name": "exposicion-rest-webapi-grupo-d",
-  "version": "1.0.0",
-  "description": "Exposición interactiva sobre REST y Web API con una API REST de productos.",
-  "main": "api/server.js",
-  "scripts": {
-    "start": "node api/server.js"
-  }
-}

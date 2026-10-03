@@ -2,102 +2,124 @@
 <html lang="es">
 
 <head>
-    <!-- =========================================================
-         CONFIGURACIÓN GENERAL
-         ========================================================= -->
-
     <meta charset="UTF-8">
 
-    <!-- Permite que la página se adapte correctamente a celulares -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Exposición interactiva sobre REST y Web API - Grupo D"
+        content="Exposición Grupo D - REST y Web API"
     >
 
     <title>REST & Web API | Grupo D</title>
 
-    <!-- Archivo de estilos -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link
+        rel="stylesheet"
+        href="./css/styles.css"
+    >
 </head>
 
 <body>
 
     <!-- =========================================================
-         FONDOS DECORATIVOS
+         FONDO TECNOLÓGICO
          ========================================================= -->
+
+    <div class="grid-background"></div>
 
     <div class="ambient ambient-1"></div>
     <div class="ambient ambient-2"></div>
 
 
     <!-- =========================================================
-         BARRA DE NAVEGACIÓN
+         BARRA SUPERIOR
          ========================================================= -->
 
     <header class="topbar">
 
-        <!-- Logo / nombre -->
-        <a href="#inicio" class="brand">
+        <a
+            href="#inicio"
+            class="brand"
+        >
 
-            <span class="brand-mark">
+            <span class="brand-logo">
                 API
             </span>
 
-            <span class="brand-copy">
-                <strong>REST & Web API</strong>
-                <small>Unidad 3 · Grupo D</small>
+            <span class="brand-text">
+
+                <strong>
+                    REST & Web API
+                </strong>
+
+                <small>
+                    Grupo D · Unidad 3
+                </small>
+
             </span>
 
         </a>
 
 
-        <!-- Menú para computadora -->
+        <!-- MENÚ DE ESCRITORIO -->
+
         <nav class="desktop-nav">
 
-            <a href="#conceptos">
-                Conceptos
+            <a href="#api">
+                API
             </a>
 
             <a href="#rest">
                 REST
             </a>
 
+            <a href="#recurso">
+                Recurso
+            </a>
+
+            <a href="#endpoint">
+                Endpoint
+            </a>
+
+            <a href="#uri">
+                URI
+            </a>
+
             <a href="#arquitectura">
                 Arquitectura
-            </a>
-
-            <a href="#endpoints">
-                Endpoints
-            </a>
-
-            <a href="#demo">
-                Demo
             </a>
 
         </nav>
 
 
-        <!-- Botones superiores -->
+        <!-- BOTONES -->
+
         <div class="top-actions">
 
-            <!-- Cambiar modo claro / oscuro -->
+            <!-- MODO CLARO / OSCURO -->
+
             <button
                 id="themeToggle"
                 class="icon-btn"
                 type="button"
                 title="Cambiar tema"
             >
-                <span id="themeIcon">☾</span>
+                <span id="themeIcon">
+                    ☾
+                </span>
             </button>
 
 
-            <!-- Menú hamburguesa para celular -->
+            <!-- MENÚ CELULAR -->
+
             <button
                 id="menuToggle"
                 class="icon-btn mobile-only"
                 type="button"
+                aria-label="Abrir menú"
             >
                 ☰
             </button>
@@ -108,114 +130,146 @@
 
 
     <!-- =========================================================
-         MENÚ PARA CELULAR
+         MENÚ RESPONSIVE
          ========================================================= -->
 
-    <aside id="mobileMenu" class="mobile-menu">
+    <aside
+        id="mobileMenu"
+        class="mobile-menu"
+    >
 
-        <a href="#conceptos">
-            Conceptos
+        <a href="#api">
+            API y Web API
         </a>
 
         <a href="#rest">
             REST
         </a>
 
+        <a href="#recurso">
+            Recurso
+        </a>
+
+        <a href="#endpoint">
+            Endpoint
+        </a>
+
+        <a href="#uri">
+            URI
+        </a>
+
         <a href="#arquitectura">
-            Arquitectura
-        </a>
-
-        <a href="#endpoints">
-            Endpoints
-        </a>
-
-        <a href="#demo">
-            Demo
+            Arquitectura cliente-servidor
         </a>
 
     </aside>
 
 
-    <!-- =========================================================
-         CONTENIDO PRINCIPAL
-         ========================================================= -->
-
     <main>
 
-
         <!-- =====================================================
-             SECCIÓN 1 - PORTADA
+             PORTADA
              ===================================================== -->
 
-        <section id="inicio" class="hero section-shell">
+        <section
+            id="inicio"
+            class="hero section-shell"
+        >
 
-            <div class="hero-copy reveal">
+            <!-- INFORMACIÓN -->
+
+            <div class="hero-content reveal">
 
                 <span class="eyebrow">
                     MICROSERVICIOS Y WEB API ORIENTADOS A SOA
                 </span>
 
                 <h1>
+
                     REST
+
                     <span class="gradient-text">
                         & Web API
                     </span>
+
                 </h1>
 
-                <p class="hero-text">
 
-                    Exposición interactiva sobre
+                <p class="hero-description">
+
+                    Explicación de los conceptos fundamentales de
 
                     <strong>
                         API, Web API, REST, recurso,
                         endpoint, URI
                     </strong>
 
-                    y arquitectura
+                    y
 
                     <strong>
-                        cliente-servidor.
+                        arquitectura cliente-servidor.
                     </strong>
 
                 </p>
 
 
-                <!-- Botones -->
-                <div class="hero-actions">
+                <div class="hero-buttons">
 
                     <a
+                        href="#api"
                         class="btn btn-primary"
-                        href="#conceptos"
                     >
-                        Comenzar exposición
+                        Iniciar exposición
                     </a>
 
                     <a
+                        href="#arquitectura"
                         class="btn btn-secondary"
-                        href="#demo"
                     >
-                        Ir a la demostración
+                        Ver arquitectura
                     </a>
 
                 </div>
 
 
-                <!-- Información de tiempo -->
+                <!-- DATOS -->
+
                 <div class="hero-stats">
 
                     <article>
-                        <strong>5 min</strong>
-                        <span>Explicación</span>
+
+                        <strong>
+                            6
+                        </strong>
+
+                        <span>
+                            Temas
+                        </span>
+
                     </article>
 
                     <article>
-                        <strong>5 min</strong>
-                        <span>Demostración</span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <span>
+                            Integrantes
+                        </span>
+
                     </article>
 
                     <article>
-                        <strong>HTTP</strong>
-                        <span>Comunicación</span>
+
+                        <strong>
+                            5 min
+                        </strong>
+
+                        <span>
+                            Exposición
+                        </span>
+
                     </article>
 
                 </div>
@@ -223,16 +277,21 @@
             </div>
 
 
-            <!-- Ejemplo visual de respuesta HTTP -->
+            <!-- TERMINAL -->
+
             <div class="hero-visual reveal">
 
-                <div class="terminal-card glass">
+                <div class="terminal glass">
 
-                    <div class="terminal-top">
+                    <div class="terminal-header">
 
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <div class="terminal-dots">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
 
                         <small>
                             GET /api/productos/1
@@ -240,22 +299,24 @@
 
                     </div>
 
-                    <pre><code><span class="code-key">HTTP/1.1</span> <span class="code-ok">200 OK</span>
+
+                    <pre><code><span class="code-blue">HTTP/1.1</span> <span class="code-green">200 OK</span>
 Content-Type: application/json
 
 {
-  <span class="code-prop">"id"</span>: 1,
-  <span class="code-prop">"nombre"</span>: <span class="code-string">"Laptop"</span>,
-  <span class="code-prop">"precio"</span>: 899.99
+  <span class="code-purple">"id"</span>: 1,
+  <span class="code-purple">"nombre"</span>: <span class="code-green">"Laptop"</span>,
+  <span class="code-purple">"precio"</span>: 899.99
 }</code></pre>
 
                 </div>
 
-                <div class="orbit orbit-a">
+
+                <div class="orbit orbit-client">
                     CLIENTE
                 </div>
 
-                <div class="orbit orbit-b">
+                <div class="orbit orbit-server">
                     SERVIDOR
                 </div>
 
@@ -265,179 +326,133 @@ Content-Type: application/json
 
 
         <!-- =====================================================
-             SECCIÓN 2 - CONCEPTOS
+             PERSONA 1
+             TEMA 1 - API Y WEB API
              ===================================================== -->
 
         <section
-            id="conceptos"
-            class="section-shell content-section"
+            id="api"
+            class="section-shell section"
         >
 
-            <div class="section-heading reveal">
+            <div class="section-header reveal">
 
-                <span class="eyebrow">
-                    01 · FUNDAMENTOS
+                <span class="section-number">
+                    01
                 </span>
 
-                <h2>
-                    Conceptos fundamentales
-                </h2>
+                <div>
 
-                <p>
-                    Antes de utilizar REST debemos comprender
-                    los conceptos principales.
-                </p>
+                    <span class="eyebrow">
+                        PERSONA 1
+                    </span>
+
+                    <h2>
+                        API y Web API
+                    </h2>
+
+                </div>
 
             </div>
 
 
-            <div class="cards-grid concepts-grid">
-
+            <div class="two-column">
 
                 <!-- API -->
-                <article class="info-card reveal">
 
-                    <div class="card-icon">
+                <article class="concept-card reveal">
+
+                    <div class="concept-icon">
                         API
                     </div>
 
                     <h3>
-                        API
+                        ¿Qué es una API?
                     </h3>
 
                     <p>
-                        Una API o
-                        <strong>
-                            Interfaz de Programación de Aplicaciones
-                        </strong>
-                        establece reglas para que diferentes
-                        programas puedan comunicarse.
+                        Una <strong>API</strong> o
+                        Interfaz de Programación de Aplicaciones
+                        es un conjunto de reglas que permite que
+                        diferentes aplicaciones o sistemas puedan
+                        comunicarse entre sí.
                     </p>
 
-                    <span class="tag">
-                        Interfaz
-                    </span>
+
+                    <div class="example">
+
+                        <span>
+                            EJEMPLO
+                        </span>
+
+                        <code>
+                            Aplicación → API → Sistema
+                        </code>
+
+                    </div>
 
                 </article>
 
 
                 <!-- WEB API -->
-                <article class="info-card reveal">
 
-                    <div class="card-icon">
+                <article class="concept-card highlighted reveal">
+
+                    <div class="concept-icon">
                         WEB
                     </div>
 
                     <h3>
-                        Web API
+                        ¿Qué es una Web API?
                     </h3>
 
                     <p>
-                        Es una API accesible mediante tecnologías web.
-                        Generalmente utiliza
-                        <strong>HTTP</strong>
-                        para enviar y recibir información.
+                        Una <strong>Web API</strong> es una API
+                        accesible mediante tecnologías web.
+                        Normalmente utiliza el protocolo
+                        <strong>HTTP</strong> para recibir
+                        peticiones y devolver respuestas.
                     </p>
 
-                    <span class="tag">
-                        HTTP + JSON
-                    </span>
 
-                </article>
+                    <div class="example">
 
+                        <span>
+                            EJEMPLO
+                        </span>
 
-                <!-- REST -->
-                <article class="info-card reveal">
+                        <code>
+                            https://servidor.com/api/productos
+                        </code>
 
-                    <div class="card-icon">
-                        REST
                     </div>
 
-                    <h3>
-                        REST
-                    </h3>
-
-                    <p>
-                        Es un estilo arquitectónico utilizado para
-                        construir servicios web alrededor de
-                        <strong>recursos</strong>.
-                    </p>
-
-                    <span class="tag">
-                        Arquitectura
-                    </span>
-
                 </article>
 
-
-                <!-- RECURSO -->
-                <article class="info-card reveal">
-
-                    <div class="card-icon">
-                        R
-                    </div>
-
-                    <h3>
-                        Recurso
-                    </h3>
-
-                    <p>
-                        Es una entidad que queremos consultar,
-                        crear, modificar o eliminar.
-                    </p>
-
-                    <span class="tag">
-                        Ejemplo: Producto
-                    </span>
-
-                </article>
+            </div>
 
 
-                <!-- ENDPOINT -->
-                <article class="info-card reveal">
+            <!-- DIFERENCIA -->
 
-                    <div class="card-icon">
-                        EP
-                    </div>
+            <div class="key-message glass reveal">
 
-                    <h3>
-                        Endpoint
-                    </h3>
+                <span class="key-icon">
+                    ↔
+                </span>
+
+                <div>
+
+                    <strong>
+                        Diferencia principal
+                    </strong>
 
                     <p>
-                        Es un punto específico de acceso a una API,
-                        formado principalmente por un
-                        <strong>método HTTP y una ruta</strong>.
+                        Toda Web API es una API, pero una API no
+                        necesariamente tiene que funcionar mediante
+                        Internet o HTTP.
                     </p>
 
-                    <span class="tag">
-                        GET /api/productos
-                    </span>
-
-                </article>
-
-
-                <!-- URI -->
-                <article class="info-card reveal">
-
-                    <div class="card-icon">
-                        URI
-                    </div>
-
-                    <h3>
-                        URI
-                    </h3>
-
-                    <p>
-                        La URI identifica un recurso dentro
-                        del servicio.
-                    </p>
-
-                    <span class="tag">
-                        /api/productos/1
-                    </span>
-
-                </article>
+                </div>
 
             </div>
 
@@ -445,179 +460,123 @@ Content-Type: application/json
 
 
         <!-- =====================================================
-             SECCIÓN 3 - REST
+             PERSONA 1
+             TEMA 2 - REST
              ===================================================== -->
 
         <section
             id="rest"
-            class="section-shell content-section"
+            class="section-shell section"
         >
 
-            <div class="section-heading reveal">
+            <div class="section-header reveal">
 
-                <span class="eyebrow">
-                    02 · REST
+                <span class="section-number">
+                    02
                 </span>
 
-                <h2>
-                    Métodos HTTP
-                </h2>
+                <div>
 
-                <p>
-                    REST aprovecha los métodos HTTP para realizar
-                    operaciones sobre los recursos.
-                </p>
+                    <span class="eyebrow">
+                        PERSONA 1
+                    </span>
+
+                    <h2>
+                        REST
+                    </h2>
+
+                </div>
 
             </div>
 
 
-            <div class="method-grid">
+            <div class="feature-layout">
 
+                <div class="feature-text reveal">
 
-                <!-- GET -->
-                <article class="method-card reveal">
-
-                    <span class="method method-get">
-                        GET
+                    <span class="large-label">
+                        REST
                     </span>
 
                     <h3>
-                        Consultar
+                        Representational State Transfer
                     </h3>
 
                     <p>
-                        Obtiene información de uno o varios recursos.
+                        REST es un
+                        <strong>estilo arquitectónico</strong>
+                        utilizado para diseñar servicios web.
                     </p>
-
-                    <code>
-                        GET /api/productos
-                    </code>
-
-                </article>
-
-
-                <!-- POST -->
-                <article class="method-card reveal">
-
-                    <span class="method method-post">
-                        POST
-                    </span>
-
-                    <h3>
-                        Crear
-                    </h3>
 
                     <p>
-                        Permite registrar un nuevo recurso.
+                        Se basa principalmente en
+                        <strong>recursos</strong>
+                        que pueden ser consultados o modificados
+                        utilizando HTTP.
                     </p>
 
-                    <code>
-                        POST /api/productos
-                    </code>
 
-                </article>
+                    <div class="rest-points">
 
+                        <span>
+                            Recursos
+                        </span>
 
-                <!-- PUT -->
-                <article class="method-card reveal">
+                        <span>
+                            HTTP
+                        </span>
 
-                    <span class="method method-put">
-                        PUT
-                    </span>
+                        <span>
+                            URI
+                        </span>
 
-                    <h3>
-                        Actualizar
-                    </h3>
+                        <span>
+                            Cliente-servidor
+                        </span>
 
-                    <p>
-                        Modifica un recurso existente.
-                    </p>
-
-                    <code>
-                        PUT /api/productos/1
-                    </code>
-
-                </article>
-
-
-                <!-- DELETE -->
-                <article class="method-card reveal">
-
-                    <span class="method method-delete">
-                        DELETE
-                    </span>
-
-                    <h3>
-                        Eliminar
-                    </h3>
-
-                    <p>
-                        Elimina un recurso del servidor.
-                    </p>
-
-                    <code>
-                        DELETE /api/productos/1
-                    </code>
-
-                </article>
-
-            </div>
-
-
-            <!-- Flujo REST -->
-            <div class="rest-flow glass reveal">
-
-                <div class="flow-node">
-
-                    <small>1</small>
-
-                    <strong>
-                        Cliente
-                    </strong>
-
-                    <span>
-                        Envía petición HTTP
-                    </span>
+                    </div>
 
                 </div>
 
 
-                <div class="flow-arrow">
-                    →
-                </div>
+                <div class="rest-example glass reveal">
+
+                    <div class="rest-example-title">
+                        Ejemplo REST
+                    </div>
+
+                    <div class="request-line">
+
+                        <span class="method get">
+                            GET
+                        </span>
+
+                        <code>
+                            /api/productos
+                        </code>
+
+                    </div>
 
 
-                <div class="flow-node featured">
-
-                    <small>2</small>
-
-                    <strong>
-                        Web API
-                    </strong>
-
-                    <span>
-                        Procesa la solicitud
-                    </span>
-
-                </div>
+                    <div class="arrow-down">
+                        ↓
+                    </div>
 
 
-                <div class="flow-arrow">
-                    →
-                </div>
+                    <div class="response-demo">
 
+                        <span>
+                            200 OK
+                        </span>
 
-                <div class="flow-node">
+                        <pre><code>[
+  {
+    "id": 1,
+    "nombre": "Laptop"
+  }
+]</code></pre>
 
-                    <small>3</small>
-
-                    <strong>
-                        Respuesta
-                    </strong>
-
-                    <span>
-                        Estado HTTP + JSON
-                    </span>
+                    </div>
 
                 </div>
 
@@ -627,39 +586,474 @@ Content-Type: application/json
 
 
         <!-- =====================================================
-             SECCIÓN 4 - CLIENTE SERVIDOR
+             PERSONA 2
+             TEMA 3 - RECURSO
              ===================================================== -->
 
         <section
-            id="arquitectura"
-            class="section-shell content-section"
+            id="recurso"
+            class="section-shell section"
         >
 
-            <div class="section-heading reveal">
+            <div class="section-header reveal">
 
-                <span class="eyebrow">
-                    03 · CLIENTE-SERVIDOR
+                <span class="section-number">
+                    03
                 </span>
 
-                <h2>
-                    Arquitectura cliente-servidor
-                </h2>
+                <div>
 
-                <p>
-                    El cliente solicita información y el servidor
-                    procesa la petición.
-                </p>
+                    <span class="eyebrow">
+                        PERSONA 2
+                    </span>
+
+                    <h2>
+                        Recurso
+                    </h2>
+
+                </div>
 
             </div>
 
 
+            <div class="resource-layout">
+
+                <article class="main-card reveal">
+
+                    <div class="concept-icon large">
+                        R
+                    </div>
+
+                    <h3>
+                        ¿Qué es un recurso?
+                    </h3>
+
+                    <p>
+                        Un <strong>recurso</strong> es cualquier
+                        entidad o información que una Web API permite
+                        consultar, crear, modificar o eliminar.
+                    </p>
+
+                    <p>
+                        En REST, los recursos representan elementos
+                        reales del sistema.
+                    </p>
+
+                </article>
+
+
+                <div class="resource-examples">
+
+                    <article class="mini-card reveal">
+
+                        <span>
+                            👤
+                        </span>
+
+                        <strong>
+                            Usuario
+                        </strong>
+
+                        <code>
+                            /api/usuarios
+                        </code>
+
+                    </article>
+
+
+                    <article class="mini-card reveal">
+
+                        <span>
+                            💻
+                        </span>
+
+                        <strong>
+                            Producto
+                        </strong>
+
+                        <code>
+                            /api/productos
+                        </code>
+
+                    </article>
+
+
+                    <article class="mini-card reveal">
+
+                        <span>
+                            📦
+                        </span>
+
+                        <strong>
+                            Pedido
+                        </strong>
+
+                        <code>
+                            /api/pedidos
+                        </code>
+
+                    </article>
+
+
+                    <article class="mini-card reveal">
+
+                        <span>
+                            🧾
+                        </span>
+
+                        <strong>
+                            Factura
+                        </strong>
+
+                        <code>
+                            /api/facturas
+                        </code>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <div class="definition-bar glass reveal">
+
+                <span>
+                    RECURSO
+                </span>
+
+                <strong>
+                    =
+                </strong>
+
+                <span>
+                    Información del sistema que queremos manipular
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PERSONA 2
+             TEMA 4 - ENDPOINT
+             ===================================================== -->
+
+        <section
+            id="endpoint"
+            class="section-shell section"
+        >
+
+            <div class="section-header reveal">
+
+                <span class="section-number">
+                    04
+                </span>
+
+                <div>
+
+                    <span class="eyebrow">
+                        PERSONA 2
+                    </span>
+
+                    <h2>
+                        Endpoint
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="endpoint-layout">
+
+                <article class="main-card reveal">
+
+                    <div class="concept-icon large">
+                        EP
+                    </div>
+
+                    <h3>
+                        ¿Qué es un endpoint?
+                    </h3>
+
+                    <p>
+                        Un <strong>endpoint</strong> es un punto
+                        específico de acceso dentro de una Web API.
+                    </p>
+
+                    <p>
+                        Normalmente se identifica mediante un
+                        <strong>método HTTP</strong>
+                        junto con una
+                        <strong>ruta</strong>.
+                    </p>
+
+                </article>
+
+
+                <div class="endpoint-list glass reveal">
+
+                    <article>
+
+                        <span class="method get">
+                            GET
+                        </span>
+
+                        <code>
+                            /api/productos
+                        </code>
+
+                        <small>
+                            Consultar productos
+                        </small>
+
+                    </article>
+
+
+                    <article>
+
+                        <span class="method post">
+                            POST
+                        </span>
+
+                        <code>
+                            /api/productos
+                        </code>
+
+                        <small>
+                            Crear producto
+                        </small>
+
+                    </article>
+
+
+                    <article>
+
+                        <span class="method put">
+                            PUT
+                        </span>
+
+                        <code>
+                            /api/productos/1
+                        </code>
+
+                        <small>
+                            Actualizar producto
+                        </small>
+
+                    </article>
+
+
+                    <article>
+
+                        <span class="method delete">
+                            DELETE
+                        </span>
+
+                        <code>
+                            /api/productos/1
+                        </code>
+
+                        <small>
+                            Eliminar producto
+                        </small>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <div class="formula glass reveal">
+
+                <span class="method get">
+                    GET
+                </span>
+
+                <strong>
+                    +
+                </strong>
+
+                <code>
+                    /api/productos/1
+                </code>
+
+                <strong>
+                    =
+                </strong>
+
+                <span class="formula-result">
+                    ENDPOINT
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PERSONA 3
+             TEMA 5 - URI
+             ===================================================== -->
+
+        <section
+            id="uri"
+            class="section-shell section"
+        >
+
+            <div class="section-header reveal">
+
+                <span class="section-number">
+                    05
+                </span>
+
+                <div>
+
+                    <span class="eyebrow">
+                        PERSONA 3
+                    </span>
+
+                    <h2>
+                        URI
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="uri-layout">
+
+                <article class="main-card reveal">
+
+                    <div class="concept-icon large">
+                        URI
+                    </div>
+
+                    <h3>
+                        Uniform Resource Identifier
+                    </h3>
+
+                    <p>
+                        Una <strong>URI</strong> es un identificador
+                        que permite localizar o identificar un recurso
+                        dentro de una Web API.
+                    </p>
+
+                    <p>
+                        Debe ser clara y representar el recurso que
+                        queremos utilizar.
+                    </p>
+
+                </article>
+
+
+                <div class="uri-example glass reveal">
+
+                    <span class="uri-title">
+                        EJEMPLO
+                    </span>
+
+
+                    <div class="uri-code">
+
+                        <span class="host">
+                            https://api.tienda.com
+                        </span>
+
+                        <span class="resource">
+                            /productos
+                        </span>
+
+                        <span class="identifier">
+                            /10
+                        </span>
+
+                    </div>
+
+
+                    <div class="uri-labels">
+
+                        <span>
+                            Servidor
+                        </span>
+
+                        <span>
+                            Recurso
+                        </span>
+
+                        <span>
+                            ID
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Esta URI identifica específicamente al
+                        producto con identificador
+                        <strong>10</strong>.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PERSONA 3
+             TEMA 6 - ARQUITECTURA CLIENTE-SERVIDOR
+             ===================================================== -->
+
+        <section
+            id="arquitectura"
+            class="section-shell section"
+        >
+
+            <div class="section-header reveal">
+
+                <span class="section-number">
+                    06
+                </span>
+
+                <div>
+
+                    <span class="eyebrow">
+                        PERSONA 3
+                    </span>
+
+                    <h2>
+                        Arquitectura cliente-servidor
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="architecture-intro reveal">
+
+                En una arquitectura cliente-servidor,
+                <strong>el cliente realiza una solicitud</strong>
+                y el
+                <strong>servidor procesa la petición</strong>
+                y devuelve una respuesta.
+
+            </p>
+
+
             <div class="architecture reveal">
 
-
                 <!-- CLIENTE -->
+
                 <article class="architecture-box">
 
-                    <span class="architecture-label">
+                    <span class="architecture-type">
                         CLIENTE
                     </span>
 
@@ -668,29 +1062,55 @@ Content-Type: application/json
                     </div>
 
                     <h3>
-                        Navegador / Postman / Aplicación
+                        Aplicación cliente
                     </h3>
 
                     <p>
-                        Envía una petición HTTP indicando
-                        el método, la URI y los datos necesarios.
+                        Es quien solicita información o realiza
+                        acciones sobre los recursos.
                     </p>
+
+
+                    <div class="architecture-tags">
+
+                        <span>
+                            Navegador
+                        </span>
+
+                        <span>
+                            Postman
+                        </span>
+
+                        <span>
+                            App móvil
+                        </span>
+
+                    </div>
 
                 </article>
 
 
-                <!-- CANAL HTTP -->
-                <div class="http-channel">
+                <!-- COMUNICACIÓN -->
 
-                    <span>
+                <div class="communication">
+
+                    <span class="communication-text">
                         HTTP Request →
                     </span>
 
-                    <div class="channel-line">
-                        <i></i>
+                    <div class="channel">
+                        <span></span>
                     </div>
 
-                    <span>
+                    <div class="http-circle">
+                        HTTP
+                    </div>
+
+                    <div class="channel reverse">
+                        <span></span>
+                    </div>
+
+                    <span class="communication-text">
                         ← HTTP Response
                     </span>
 
@@ -698,9 +1118,10 @@ Content-Type: application/json
 
 
                 <!-- SERVIDOR -->
+
                 <article class="architecture-box">
 
-                    <span class="architecture-label">
+                    <span class="architecture-type">
                         SERVIDOR
                     </span>
 
@@ -709,397 +1130,121 @@ Content-Type: application/json
                     </div>
 
                     <h3>
-                        Web API REST
+                        Web API
                     </h3>
 
                     <p>
-                        Procesa la solicitud y devuelve una respuesta
-                        con un código HTTP y generalmente datos JSON.
+                        Recibe la petición, procesa la lógica y
+                        devuelve una respuesta al cliente.
                     </p>
+
+
+                    <div class="architecture-tags">
+
+                        <span>
+                            Procesa
+                        </span>
+
+                        <span>
+                            Consulta
+                        </span>
+
+                        <span>
+                            Responde
+                        </span>
+
+                    </div>
 
                 </article>
 
             </div>
 
 
-            <!-- Códigos HTTP -->
-            <div class="status-strip reveal">
+            <!-- FLUJO -->
 
-                <span>
-                    <strong>200</strong>
-                    OK
-                </span>
+            <div class="flow glass reveal">
 
-                <span>
-                    <strong>201</strong>
-                    Created
-                </span>
+                <article>
 
-                <span>
-                    <strong>400</strong>
-                    Bad Request
-                </span>
+                    <span>
+                        1
+                    </span>
 
-                <span>
-                    <strong>404</strong>
-                    Not Found
-                </span>
+                    <strong>
+                        Cliente
+                    </strong>
 
-                <span>
-                    <strong>500</strong>
-                    Server Error
-                </span>
+                    <small>
+                        Solicita un recurso
+                    </small>
 
-            </div>
+                </article>
 
-        </section>
 
-
-        <!-- =====================================================
-             SECCIÓN 5 - ENDPOINTS
-             ===================================================== -->
-
-        <section
-            id="endpoints"
-            class="section-shell content-section"
-        >
-
-            <div class="section-heading reveal">
-
-                <span class="eyebrow">
-                    04 · WEB API
-                </span>
-
-                <h2>
-                    Endpoints de productos
-                </h2>
-
-                <p>
-                    La API contiene diferentes operaciones CRUD.
-                </p>
-
-            </div>
-
-
-            <div class="endpoint-table-wrap glass reveal">
-
-                <table class="endpoint-table">
-
-                    <thead>
-
-                        <tr>
-                            <th>Método</th>
-                            <th>URI</th>
-                            <th>Acción</th>
-                            <th>Resultado</th>
-                        </tr>
-
-                    </thead>
-
-
-                    <tbody>
-
-                        <tr>
-
-                            <td>
-                                <span class="method method-get">
-                                    GET
-                                </span>
-                            </td>
-
-                            <td>
-                                <code>/api/productos</code>
-                            </td>
-
-                            <td>
-                                Listar productos
-                            </td>
-
-                            <td>
-                                200 OK
-                            </td>
-
-                        </tr>
-
-
-                        <tr>
-
-                            <td>
-                                <span class="method method-get">
-                                    GET
-                                </span>
-                            </td>
-
-                            <td>
-                                <code>/api/productos/:id</code>
-                            </td>
-
-                            <td>
-                                Buscar producto
-                            </td>
-
-                            <td>
-                                200 / 404
-                            </td>
-
-                        </tr>
-
-
-                        <tr>
-
-                            <td>
-                                <span class="method method-post">
-                                    POST
-                                </span>
-                            </td>
-
-                            <td>
-                                <code>/api/productos</code>
-                            </td>
-
-                            <td>
-                                Crear producto
-                            </td>
-
-                            <td>
-                                201 Created
-                            </td>
-
-                        </tr>
-
-
-                        <tr>
-
-                            <td>
-                                <span class="method method-put">
-                                    PUT
-                                </span>
-                            </td>
-
-                            <td>
-                                <code>/api/productos/:id</code>
-                            </td>
-
-                            <td>
-                                Actualizar producto
-                            </td>
-
-                            <td>
-                                200 / 404
-                            </td>
-
-                        </tr>
-
-
-                        <tr>
-
-                            <td>
-                                <span class="method method-delete">
-                                    DELETE
-                                </span>
-                            </td>
-
-                            <td>
-                                <code>/api/productos/:id</code>
-                            </td>
-
-                            <td>
-                                Eliminar producto
-                            </td>
-
-                            <td>
-                                200 / 404
-                            </td>
-
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             SECCIÓN 6 - DEMOSTRACIÓN
-             ===================================================== -->
-
-        <section
-            id="demo"
-            class="section-shell content-section"
-        >
-
-            <div class="section-heading reveal">
-
-                <span class="eyebrow">
-                    05 · DEMOSTRACIÓN
-                </span>
-
-                <h2>
-                    Cliente HTTP
-                </h2>
-
-                <p>
-                    Desde esta misma página podemos consumir
-                    nuestra Web API.
-                </p>
-
-            </div>
-
-
-            <div class="api-console reveal">
-
-
-                <!-- PANEL DE PETICIÓN -->
-                <div class="request-panel glass">
-
-                    <div class="panel-title">
-
-                        <span>
-                            Petición HTTP
-                        </span>
-
-                        <span
-                            id="apiStatus"
-                            class="api-dot"
-                        >
-                            API
-                        </span>
-
-                    </div>
-
-
-                    <!-- Método -->
-                    <label for="methodSelect">
-                        Método HTTP
-                    </label>
-
-                    <select id="methodSelect">
-
-                        <option value="GET">
-                            GET
-                        </option>
-
-                        <option value="POST">
-                            POST
-                        </option>
-
-                        <option value="PUT">
-                            PUT
-                        </option>
-
-                        <option value="DELETE">
-                            DELETE
-                        </option>
-
-                    </select>
-
-
-                    <!-- Endpoint -->
-                    <label for="endpointInput">
-                        Endpoint
-                    </label>
-
-                    <input
-                        id="endpointInput"
-                        type="text"
-                        value="/api/productos"
-                    >
-
-
-                    <!-- Body -->
-                    <label for="bodyInput">
-                        Body JSON
-                    </label>
-
-                    <textarea
-                        id="bodyInput"
-                        placeholder='{"nombre":"Teclado","precio":75.50}'
-                    ></textarea>
-
-
-                    <!-- Ejemplos automáticos -->
-                    <div class="quick-actions">
-
-                        <button
-                            type="button"
-                            data-example="list"
-                        >
-                            Listar
-                        </button>
-
-                        <button
-                            type="button"
-                            data-example="one"
-                        >
-                            Buscar #1
-                        </button>
-
-                        <button
-                            type="button"
-                            data-example="create"
-                        >
-                            Crear
-                        </button>
-
-                        <button
-                            type="button"
-                            data-example="update"
-                        >
-                            Actualizar
-                        </button>
-
-                        <button
-                            type="button"
-                            data-example="delete"
-                        >
-                            Eliminar
-                        </button>
-
-                    </div>
-
-
-                    <!-- Ejecutar petición -->
-                    <button
-                        id="sendRequest"
-                        class="btn btn-primary full"
-                        type="button"
-                    >
-                        Enviar petición HTTP
-                    </button>
-
+                <div>
+                    →
                 </div>
 
 
-                <!-- PANEL DE RESPUESTA -->
-                <div class="response-panel glass">
+                <article>
 
-                    <div class="panel-title">
+                    <span>
+                        2
+                    </span>
 
-                        <span>
-                            Respuesta HTTP
-                        </span>
+                    <strong>
+                        HTTP
+                    </strong>
 
-                        <span
-                            id="responseBadge"
-                            class="response-badge"
-                        >
-                            Sin ejecutar
-                        </span>
+                    <small>
+                        Transporta la petición
+                    </small>
 
-                    </div>
+                </article>
 
 
-                    <pre
-                        id="responseOutput"
-                        class="response-output"
-                    >{
-    "mensaje": "Selecciona una operación"
-}</pre>
-
+                <div>
+                    →
                 </div>
+
+
+                <article>
+
+                    <span>
+                        3
+                    </span>
+
+                    <strong>
+                        Web API
+                    </strong>
+
+                    <small>
+                        Procesa la solicitud
+                    </small>
+
+                </article>
+
+
+                <div>
+                    →
+                </div>
+
+
+                <article>
+
+                    <span>
+                        4
+                    </span>
+
+                    <strong>
+                        Respuesta
+                    </strong>
+
+                    <small>
+                        Retorna datos
+                    </small>
+
+                </article>
 
             </div>
 
@@ -1110,7 +1255,7 @@ Content-Type: application/json
              CONCLUSIÓN
              ===================================================== -->
 
-        <section class="closing section-shell">
+        <section class="section-shell closing">
 
             <div class="closing-card glass reveal">
 
@@ -1119,21 +1264,66 @@ Content-Type: application/json
                 </span>
 
                 <h2>
-                    REST permite exponer recursos mediante HTTP
+                    ¿Cómo se relacionan estos conceptos?
                 </h2>
 
                 <p>
-                    Una Web API permite que diferentes aplicaciones
-                    se comuniquen utilizando endpoints, URI,
-                    métodos HTTP, códigos de estado y formatos
-                    de intercambio como JSON.
+                    Una <strong>Web API</strong> puede utilizar
+                    <strong>REST</strong> para organizar sus
+                    <strong>recursos</strong>, identificarlos
+                    mediante una <strong>URI</strong> y acceder a
+                    ellos mediante diferentes
+                    <strong>endpoints</strong> dentro de una
+                    arquitectura <strong>cliente-servidor</strong>.
                 </p>
 
+
+                <div class="final-flow">
+
+                    <span>
+                        Cliente
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                    <span>
+                        Endpoint
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                    <span>
+                        Recurso
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                    <span>
+                        Web API
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                    <span>
+                        Respuesta
+                    </span>
+
+                </div>
+
+
                 <a
+                    href="#inicio"
                     class="btn btn-primary"
-                    href="#demo"
                 >
-                    Volver a la demo
+                    Volver al inicio
                 </a>
 
             </div>
@@ -1144,7 +1334,7 @@ Content-Type: application/json
 
 
     <!-- =========================================================
-         PIE DE PÁGINA
+         FOOTER
          ========================================================= -->
 
     <footer>
@@ -1160,17 +1350,18 @@ Content-Type: application/json
     </footer>
 
 
-    <!-- Botón volver arriba -->
+    <!-- BOTÓN VOLVER ARRIBA -->
+
     <button
         id="backToTop"
         class="back-to-top"
         type="button"
+        title="Volver arriba"
     >
         ↑
     </button>
 
 
-    <!-- JavaScript -->
     <script src="./js/app.js"></script>
 
 </body>
