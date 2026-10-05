@@ -894,115 +894,239 @@ Content-Type: application/json
         </section>
 
 
-        <!-- =====================================================
-             PERSONA 3
-             TEMA 5 - URI
-             ===================================================== -->
+       <!-- =====================================================
+     PERSONA 3
+     TEMA 5 - URI
+     ===================================================== -->
 
-        <section
-            id="uri"
-            class="section-shell section"
-        >
+<section
+    id="uri"
+    class="section-shell section"
+>
 
-            <div class="section-header reveal">
+    <div class="section-header reveal">
 
-                <span class="section-number">
-                    05
+        <span class="section-number">
+            05
+        </span>
+
+        <div>
+
+            <span class="eyebrow">
+                PERSONA 3
+            </span>
+
+            <h2>
+                URI
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="uri-layout">
+
+        <!-- =================================================
+             DEFINICIÓN
+             ================================================= -->
+
+        <article class="main-card reveal">
+
+            <div class="concept-icon large">
+                URI
+            </div>
+
+            <h3>
+                Uniform Resource Identifier
+            </h3>
+
+            <!-- Traducción al español -->
+            <span class="uri-translation">
+                Identificador Uniforme de Recursos
+            </span>
+
+            <p>
+                Una <strong>URI</strong> es un identificador
+                que permite localizar o identificar un recurso
+                específico dentro de una Web API.
+            </p>
+
+            <p>
+                En REST, las URI deben ser claras y representar
+                correctamente los recursos disponibles dentro
+                del servicio.
+            </p>
+
+        </article>
+
+
+        <!-- =================================================
+             EJEMPLO ESTRUCTURADO DE URI
+             ================================================= -->
+
+        <div class="uri-example glass reveal">
+
+            <span class="uri-title">
+                ESTRUCTURA DE UNA URI
+            </span>
+
+
+            <!-- =================================================
+                 URL COMPLETA
+                 ================================================= -->
+
+            <div class="uri-full">
+
+                <span class="uri-domain">
+                    https://api.tienda.com
                 </span>
 
-                <div>
+                <span class="uri-route">
+                    /api
+                </span>
 
-                    <span class="eyebrow">
-                        PERSONA 3
-                    </span>
+                <span class="uri-resource">
+                    /productos
+                </span>
 
-                    <h2>
-                        URI
-                    </h2>
-
-                </div>
+                <span class="uri-id">
+                    /10
+                </span>
 
             </div>
 
 
-            <div class="uri-layout">
+            <!-- =================================================
+                 INDICADORES
+                 ================================================= -->
 
-                <article class="main-card reveal">
+            <div class="uri-structure">
 
-                    <div class="concept-icon large">
-                        URI
+
+                <!-- DOMINIO -->
+
+                <article>
+
+                    <div class="uri-indicator domain-color">
+                        ↑
                     </div>
 
-                    <h3>
-                        Uniform Resource Identifier
-                    </h3>
+                    <strong>
+                        Dominio
+                    </strong>
+
+                    <code>
+                        https://api.tienda.com
+                    </code>
 
                     <p>
-                        Una <strong>URI</strong> es un identificador
-                        que permite localizar o identificar un recurso
-                        dentro de una Web API.
-                    </p>
-
-                    <p>
-                        Debe ser clara y representar el recurso que
-                        queremos utilizar.
+                        Identifica el servidor donde se encuentra
+                        publicada la Web API.
                     </p>
 
                 </article>
 
 
-                <div class="uri-example glass reveal">
+                <!-- RUTA -->
 
-                    <span class="uri-title">
-                        EJEMPLO
-                    </span>
+                <article>
 
-
-                    <div class="uri-code">
-
-                        <span class="host">
-                            https://api.tienda.com
-                        </span>
-
-                        <span class="resource">
-                            /productos
-                        </span>
-
-                        <span class="identifier">
-                            /10
-                        </span>
-
+                    <div class="uri-indicator route-color">
+                        ↑
                     </div>
 
+                    <strong>
+                        Ruta
+                    </strong>
 
-                    <div class="uri-labels">
-
-                        <span>
-                            Servidor
-                        </span>
-
-                        <span>
-                            Recurso
-                        </span>
-
-                        <span>
-                            ID
-                        </span>
-
-                    </div>
-
+                    <code>
+                        /api
+                    </code>
 
                     <p>
-                        Esta URI identifica específicamente al
-                        producto con identificador
-                        <strong>10</strong>.
+                        Indica la ruta base utilizada para acceder
+                        a los servicios de la API.
                     </p>
 
-                </div>
+                </article>
+
+
+                <!-- RECURSO -->
+
+                <article>
+
+                    <div class="uri-indicator resource-color">
+                        ↑
+                    </div>
+
+                    <strong>
+                        Recurso
+                    </strong>
+
+                    <code>
+                        /productos
+                    </code>
+
+                    <p>
+                        Representa la entidad que queremos consultar
+                        o manipular.
+                    </p>
+
+                </article>
+
+
+                <!-- ID -->
+
+                <article>
+
+                    <div class="uri-indicator id-color">
+                        ↑
+                    </div>
+
+                    <strong>
+                        ID
+                    </strong>
+
+                    <code>
+                        /10
+                    </code>
+
+                    <p>
+                        Identifica específicamente un recurso
+                        dentro de la colección.
+                    </p>
+
+                </article>
 
             </div>
 
-        </section>
+
+            <!-- =================================================
+                 RESULTADO
+                 ================================================= -->
+
+            <div class="uri-result">
+
+                <span>
+                    Resultado
+                </span>
+
+                <p>
+                    Esta URI representa al
+                    <strong>
+                        producto con identificador 10
+                    </strong>
+                    disponible dentro de la Web API.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- =====================================================

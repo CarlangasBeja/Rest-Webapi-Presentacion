@@ -1708,16 +1708,41 @@ pre {
     display: grid;
 
     grid-template-columns:
-        0.85fr 1.15fr;
+        0.75fr 1.25fr;
 
     gap: 20px;
 
 }
 
 
+/* ==============================================================
+   TRADUCCIÓN DE URI
+   ============================================================== */
+
+.uri-translation {
+
+    display: inline-block;
+
+    margin:
+        -3px 0 18px;
+
+    color:
+        var(--primary);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+}
+
+
+/* ==============================================================
+   CONTENEDOR DEL EJEMPLO
+   ============================================================== */
+
 .uri-example {
 
-    padding: 27px;
+    padding: 28px;
 
     border-radius:
         var(--radius);
@@ -1727,6 +1752,8 @@ pre {
 
 .uri-title {
 
+    display: block;
+
     color:
         var(--muted);
 
@@ -1734,88 +1761,350 @@ pre {
 
     font-weight: 900;
 
+    letter-spacing:
+        0.13em;
+
 }
 
 
-.uri-code {
+/* ==============================================================
+   URL COMPLETA
+   ============================================================== */
+
+.uri-full {
 
     display: flex;
 
     flex-wrap: wrap;
 
+    align-items: center;
+
     margin:
-        30px 0 12px;
+        28px 0 30px;
+
+    padding:
+        18px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:
+        14px;
+
+    background:
+        var(--bg-soft);
 
     font-family:
         Consolas,
+        "Courier New",
         monospace;
 
     font-size:
         clamp(
-            14px,
-            2vw,
-            20px
+            13px,
+            1.6vw,
+            18px
         );
 
-    font-weight: 700;
+    font-weight: 800;
+
+    overflow-wrap:
+        anywhere;
 
 }
 
 
-.uri-code .host {
+/* ==============================================================
+   COLORES DE CADA PARTE DE LA URI
+   ============================================================== */
+
+.uri-domain {
+
+    color:
+        #59e4ff;
+
+}
+
+
+.uri-route {
+
+    color:
+        #54efbc;
+
+}
+
+
+.uri-resource {
+
+    color:
+        #b49fff;
+
+}
+
+
+.uri-id {
+
+    color:
+        #ffc65b;
+
+}
+
+
+/* ==============================================================
+   ESTRUCTURA EXPLICATIVA
+   ============================================================== */
+
+.uri-structure {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+
+}
+
+
+/* Cada bloque */
+
+.uri-structure article {
+
+    padding:
+        16px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:
+        14px;
+
+    background:
+        var(--bg-soft);
+
+}
+
+
+/* Flecha */
+
+.uri-indicator {
+
+    margin-bottom:
+        8px;
+
+    font-size:
+        20px;
+
+    font-weight:
+        900;
+
+}
+
+
+/* Título */
+
+.uri-structure strong {
+
+    display: block;
+
+    margin-bottom:
+        8px;
+
+    font-size:
+        13px;
+
+}
+
+
+/* Código */
+
+.uri-structure code {
+
+    display: block;
+
+    margin-bottom:
+        10px;
+
+    font-size:
+        10px;
+
+    overflow-wrap:
+        anywhere;
+
+}
+
+
+/* Descripción */
+
+.uri-structure p {
+
+    margin: 0;
 
     color:
         var(--muted);
 
+    font-size:
+        11px;
+
+    line-height:
+        1.55;
+
 }
 
 
-.uri-code .resource {
+/* ==============================================================
+   COLORES DE LOS INDICADORES
+   ============================================================== */
+
+.domain-color {
+
+    color:
+        #59e4ff;
+
+}
+
+
+.route-color {
+
+    color:
+        #54efbc;
+
+}
+
+
+.resource-color {
+
+    color:
+        #b49fff;
+
+}
+
+
+.id-color {
+
+    color:
+        #ffc65b;
+
+}
+
+
+/* ==============================================================
+   RESULTADO FINAL
+   ============================================================== */
+
+.uri-result {
+
+    margin-top:
+        18px;
+
+    padding:
+        16px;
+
+    border:
+        1px solid var(--line);
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(
+            var(--primary-rgb),
+            0.06
+        );
+
+}
+
+
+.uri-result span {
+
+    display: block;
+
+    margin-bottom:
+        6px;
 
     color:
         var(--primary);
 
+    font-size:
+        10px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        0.10em;
+
 }
 
 
-.uri-code .identifier {
+.uri-result p {
 
-    color:
-        var(--secondary);
-
-}
-
-
-.uri-labels {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    padding-top: 10px;
-
-    border-top:
-        1px solid var(--line);
+    margin: 0;
 
     color:
         var(--muted);
 
-    font-size: 10px;
+    line-height:
+        1.6;
 
 }
 
 
-.uri-example p {
-
-    margin-top: 30px;
+.uri-result strong {
 
     color:
-        var(--muted);
-
-    line-height: 1.7;
+        var(--text);
 
 }
 
+
+/* ==============================================================
+   RESPONSIVE DE URI
+   ============================================================== */
+
+@media (max-width: 900px) {
+
+    .uri-layout {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .uri-structure {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .uri-full {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap: 5px;
+
+    }
+
+
+    .uri-structure {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
 
 /* ==============================================================
    ARQUITECTURA
